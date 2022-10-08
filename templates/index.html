@@ -7,7 +7,7 @@ this is index file and i want to change it
     <link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}"
 </head>
 <body>
-<h2>Uber rides weekly analysis</h2>
+<h1>Uber rides weekly analysis</h1>
 <form action="{{url_for('predict')}}" method="post">
     <input type="text" name="Priceperweek" placeholder="Price Per Week" required="required">
     <input type="text" name="Population" placeholder="Population" required="required">
@@ -18,8 +18,6 @@ this is index file and i want to change it
 <br>
 <br>
 {{prediction_text}}
-    <footer>
-  <p>All Rights Reserved</p>
-</footer>
+
 </body>
 </html>
